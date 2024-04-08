@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Archie's Restaurant</title>
+    <style>
+        body {
+            background-image: url('images/bg1.JPG');
+            background-size: 2400px;
+            width: 2000px;
+            margin: 0 auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="dropdown">
+        <button class="dropdown-toggle">
+            <span>Menu</span>
+            <i class="fas fa-caret-down"></i>
+        </button>
+        <ul class="menu">
+            <li class="menu-item"><a href="#">Italian</a></li>
+            <li class="menu-item"><a href="#">Chinese</a></li>
+            <li class="menu-item dropdown">
+                <a href="#" class="submenu-toggle">
+                    <span>Healthy Options</span>
+                    <i class="fas fa-caret-right"></i>
+                </a>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="#">Vegetarian</a></li>
+                    <li class="submenu-item"><a href="#">Vegan</a></li>
+                    <li class="submenu-item"><a href="#">Gluten-Free</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#">Mexican</a></li>
+            <li class="menu-item dropdown">
+                <a href="#" class="submenu-toggle">
+                    <span>Specials</span>
+                    <i class="fas fa-caret-right"></i>
+                </a>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="#">Cannabis Infused</a></li>
+                    <li class="submenu-item"><a href="#">Exotic Meats</a></li>
+                    <li class="submenu-item"><a href="#">Human</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="payment-model">
+        <h2>Select Payment Method:</h2>
+        <label><input type="radio" name="payment" value="credit"> Credit Card</label><br>
+        <label><input type="radio" name="payment" value="debit"> Debit Card</label><br>
+        <label><input type="radio" name="payment" value="cash"> Cash</label><br>
+        
+    </div>
+
+    <div id="order-type">
+        <label><input type="radio" name="order-buttons" value="Dine-In"> Dine-in</label><br>
+        <label><input type="radio" name="order-buttons" value="Take-Out"> Take-out</label><br>
+    </div>
+
+    <div id="comments">
+        <textarea id="comments-box" placeholder="Any special requests or comments?"></textarea><br>
+    </div>
+
+    <div id="order-buttons">
+        <a href="placeorder.html"><button style="width: 50px; height: 35px; background-color:black; color: white;">Place Order</button></a>
+        <a href="cancel.html"><button style="width: 55px; height: 20px; background-color:black; color: red;">Cancel</button></a>
+    </div>
+
+    <script src='script.js'></script>
+</body>
+</html>
