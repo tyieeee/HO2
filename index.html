@@ -9,15 +9,35 @@
     <title>Archie's Restaurant</title>
     <style>
         body {
-            background-image: url('images/bg1.JPG');
+            background-image: url('images/brown.png');
             background-size: cover;
-            width: 2000px;
-            margin: 0 auto;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+        }
+        .header {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
         }
     </style>
     
 </head>
 <body>
+    <div class="header">
+        <h1>Welcome to Archie's Restaurant</h1><br>
+    </div>
+
     <div id="dropdown">
         <button class="dropdown-toggle">
             <span>Menu</span>
